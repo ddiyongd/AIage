@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Serif+KR:wght@300&family=Poppins:ital,wght@1,800&display=swap');
+/* font-family: 'Gowun Batang', serif;
+font-family: 'Noto Serif KR', serif;
+font-family: 'Poppins', sans-serif; */
+body{
+}
+.title > h1{
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 20px;
+}
+.title > p{
+  font-family: 'Noto Serif KR', serif;
+  font-size: 20px;
+}
+.title{
+  text-align: center;
+  border-bottom: 2px black solid;
+  margin: 0px;
+  padding: 0px;
+}
+.sidebar{
+  background-color: white;
+  position: fixed;
+  border: 2px black solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  transition: 0.7s;
+  transform: translate(-150px,0px);
+}
+.sidebar:hover{
+  transform:translate(0px,0px);
+}
+.sidebar > dl > li{
+  list-style: none;
+  padding-left: 5px
+}
+.sidebar > dl > li > a, p{
+  line-height: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Noto Serif KR', serif;
+  font-size: 17px;
+}
+.sidebar > dl > li > a:hover{
+  color: white;
+  background-color: black;
+}
+.article{
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+blockquote{
+  border: 2px skyblue solid;
+  border-left: 5px skyblue solid;
+  padding: 6px;
+  padding-left: 20px;
+}
+.article  p{
+  font-family: 'Gowun Batang', serif;
+  line-height: 20px;
+}
+.article > h2{
+  font-family: 'Noto Serif KR', serif;
+}
+img{
+  width: 50vw;
+}
+.qoute{
+  padding-left: 23px;
+  font-size: 14px;
+}
+.cur{
+  font-weight: bold;
+}
+.article > ol > li{
+  font-family: 'Noto Serif KR', serif;
+}
+@keyframes slidein {
+  from{
+    opacity: 0.2;
+    transform: translate(100px,0px);
+  }
+  to{
+    opacity: 1;
+    transform: translate(0px,0px);
+  }
+}
+
+.example{
+  margin-left: 23px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid skyblue;
+}
+
+.article p{
+  animation-name: slidein;
+  animation-duration: 0.7s;
+}
